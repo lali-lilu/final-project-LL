@@ -1,0 +1,472 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Antonio|League+Spartan:700,regular&display=swap');
+button {
+  background: 0;
+  border: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+body{
+    background: url(./assets/images/background-stars.svg);
+    background-size: cover;
+    background-image: url(background-stars.svg);
+    width:100vw;
+    height: 100vh;
+    background-color: #070724;
+     font-family: Antonio;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:68.5px;
+    }
+    header H1{
+        font-family: Antonio;
+        font-style: normal;
+        letter-spacing: -1.05px;
+        margin: 16px 0 16px 24px
+    }
+   .headerNav .list .listItem a, .headerNav .list .listItem, .headerNav .list, .headerNav{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    H1{
+        font-weight: 400;
+        font-size: 28px;
+        color: #fff;
+    }
+.burger{
+    background-image: url(./assets/images/icon-burger.svg);
+    background-size: cover;
+    width:24px;
+    height:17px;
+    background-color: #070724;
+    /* font-size: 38px;
+    font-weight: 1000;
+    margin:0px;
+    padding:0px; */
+    color: #fff;
+    margin: 16px 24px 16px 0;
+    
+
+}
+
+.headerAndNavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#main-nav {
+  display: none;
+}
+
+#main-nav.active {
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  
+}
+
+.nav-list li {
+  margin: 0 1em;
+}
+
+.headerAndNavBar h1 {
+  color: #fff;
+}
+
+@media all and (min-width: 768px) {
+  .headerAndNavBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #main-nav {
+    display: block;
+  }
+
+  .burger-btn {
+    display: none;
+    
+    flex-direction: column;
+   
+  }
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width:360px;
+    height: 56px;
+    width:100%;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+width:100%;
+
+}
+.introduction a {
+    font-family: League Spartan;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    opacity: .5;
+    margin: 24px 20px  0;
+   
+}
+.quarter{
+    width: 80px;
+    height: 4px;
+    margin-top: 17px;
+    background-color: #419EBB;
+}
+.source{
+    color: #fff;
+    opacity: .5;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    mix-blend-mode: normal
+}
+.planetInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#planet-name{
+    
+    font-family: Antonio;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+#planet-desc{
+    margin: 16px 24px 32px;
+    text-align: center;
+    font-family: League Spartan;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+.option, .options .option{
+    display: none;
+}
+.sourceDiv{
+    display: flex;
+    flex-direction: row;
+}
+.key{
+    opacity: .5;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 24px;
+    letter-spacing: .727273px;
+}
+.value{
+    font-family: Antonio;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -.75px;
+    margin-right: 24px;
+}
+.bigContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 126px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.source{
+   
+    color: #fff;
+    opacity: .5;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    mix-blend-mode: normal
+}
+.sourceWiki{
+    text-decoration: underline;
+    color: #fff;
+    opacity: .5;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    mix-blend-mode: normal
+}
+.mainHr{
+    background-color: #fff;
+    opacity: .2;
+    mix-blend-mode: normal;
+    width:100%;
+}
+.planetImg{
+    margin: 95px;
+    width: 111px;
+    height: 111px;
+}
+.details{
+    width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 28px 24px 48px;
+        gap:8px;
+
+}
+.container{
+    height: 48px;
+    width: 100%;;
+    border: 1px solid #ffffff;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.textWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media   all and (min-width: 768px){
+    .planetImg{
+           margin: 95px;
+    width: 270px;
+    height: 270px;
+
+}
+.introduction{
+    display: none;
+}
+
+
+.headerNav .list .listItem a, .headerNav .list .listItem,  .headerNav{
+    display: block !important;
+    
+}
+.headerNav{
+width:66.5%;
+height:89px;
+}
+.headerNav .list .listItem a{
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: League Spartan;
+}
+.textOptions{
+    display: flex;
+    flex-direction: row;
+    margin-left: 39px;
+}
+.optionsWrap{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+  
+}
+.textWrap{
+    align-items: flex-start;
+    justify-content: center;
+}
+#planet-desc{
+margin-left:0px;
+text-align: unset;
+}
+.option p{
+    display: flex;
+    color: #fff;
+    opacity: .5;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 17px;
+    margin-left: 20px;
+    letter-spacing: 1.92857px;
+    line-height: 25px;
+    font-size: 12px;
+}
+.details{
+    flex-direction: row;
+    justify-content: center;
+    gap:22px;
+    /* max-width: 768px; */
+}
+.value{
+    font-size: 25px;
+}
+.key{
+    font-size: 12px;
+}
+.container{
+    width: 163.5px;
+    height: 88px;
+    border: 1px solid rgba(255,255,255,.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items:normal;
+}  
+.key, .value{
+    margin-left:15px;
+}
+h5{
+    opacity: 1;
+    color: #fff;
+    text-align: left;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+}
+.option{
+    border: 1px solid rgba(255,255,255,.2);
+    width: 281px;
+    height: 40px;
+    display: flex;
+    margin: 24px 20px 0;
+    align-items: center;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    margin-bottom:0px;
+}
+ul li{
+    width: 66.5%;
+    height:89px;
+    display: flex;
+    margin-top: 39px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.burger{
+    display: none !important;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height:141.5px;
+}
+
+}
+@media all and (min-width:770px){
+    .container{
+        width: 164px;
+    }
+}
+@media all and (min-width: 1440px ){
+   header{
+    height:93px;
+    flex-direction: row;
+
+   }
+    .planetImg{
+        margin-left: 150px;
+        width: 290px;
+        height: 290px;
+
+}
+.planetInfo{
+    justify-content: space-between;
+    width: 100%;
+}
+#planet-name{
+    font-size: 80px;
+}
+#planet-desc{
+    font-size: 14px;
+    text-align: left;
+    width: 350px;
+    font-size: 14px;
+    color: #ffffff80;
+}
+.textOptions{
+    flex-direction: column;
+}
+.option{
+    margin-left:0px;
+}
+.planetInfo{
+    flex-direction: row;
+}
+.container{
+    width: 249px;
+    height: 128px;
+}
+.option{
+    width:350px;
+    margin-right:0px;
+}
+.option p{
+    margin-right: 28px;
+    margin-left: 28px;
+}
+.key{
+    font-size: 11px;
+}
+.value{
+    font-size: 40px;
+}
+.details{
+    margin-top:55px;
+}
+}
